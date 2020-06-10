@@ -1,0 +1,10 @@
+注解：
+一、元注解
+ 作用：解释其他注解。
+ java 的元注解：
+ @Target ：作用在什么地方：类，方法，字段等 ，所有的作用域定义在ElementType枚举中
+ @Retention：生命周期：source(源代码)<class<runtime   定义在retentionPolicy枚举类中 .一般都写runtime
+ @Documented：
+ @Inherited
+
+二、自定义注解

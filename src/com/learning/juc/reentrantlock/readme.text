@@ -1,0 +1,16 @@
+一、  ReentrantLock   VS     Synchronized
+    1、ReentrantLock可以替代Synchronized：ReentrantLock可以锁定，可以重入，也支持非公平锁
+    2、ReentrantLock suo：CAS  Synchronized: 锁升级（偏向锁->自旋锁->OS锁）
+    3、ReentrantLock可以使用tryLock 进行尝试锁定
+    4、ReentrantLock使用lockInterruptibly()，可以使得线程被interrupt()
+    5、ReentrantLock既支持公平锁，也支持非公平锁
+
+
+
+二、CountDownLatch(闭锁) jdk1.5
+   作用：一个或者多个线程允许其他线程执行完后再继续执行。
+   原理：内部维护了一个count ，这是线程数量的计数器。当前线程使用await() ,如果计数器不为0，
+ 则调用await()的线程会一直阻塞，直到count变成0，才会继续执行。
+   应用场景：应用程序的主线程希望在负责启动框架服务的线程已经完成之后再执行
+
+
