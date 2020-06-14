@@ -1,11 +1,11 @@
 package com.learning.juc.synchronied;
 
 
-/**chong'pai
+/**
  * synchronized：对某个对象进行加锁,保证了程序的原子性和可见性。但是并不能禁止指令重排序。（synchronized必须锁的是同一个对象才会达到锁的目的)
  * 所以双重检查单例模式的对象需要加上volatile 这里的volatile作用不是保证对象的可见性，而是禁止指令重排序使用。
  *
- * hotspot实现：在java对象头上有2(00,01,10,11)位空间表示对象是否被锁定，
+ * hotspot实现：在java对象头上有2位空间表示对象是否被锁定，
  *
  * 写法一：直接new一个对象，然后每次锁定该对象。但是这样比较费事，也占用不必要的空间
  *
