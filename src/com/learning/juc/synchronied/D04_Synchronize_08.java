@@ -29,8 +29,8 @@ public class D04_Synchronize_08 {
 
     //模拟某个框架的方法
     public static void m2(){
-        //synchronized ("hello"){
-            synchronized ("hello1"){ //如果使用不同的锁，则不会阻塞
+        synchronized ("hello"){
+           // synchronized ("hello1"){ //如果使用不同的锁，则不会阻塞
             try {
                 TimeUnit.SECONDS.sleep(1);
             } catch (InterruptedException e) {

@@ -23,7 +23,7 @@ public class D04_Synchronize_01 {
 
 
     static void test() {
-       synchronized (obj) {//任何想要执行下面代码的线程，必须拿到obj的锁
+    synchronized (obj) {//任何想要执行下面代码的线程，必须拿到obj的锁
             count--;
             System.out.println(Thread.currentThread().getName().toString() + "********" + count);
 

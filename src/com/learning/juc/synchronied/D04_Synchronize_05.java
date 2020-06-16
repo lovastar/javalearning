@@ -14,7 +14,7 @@ public class D04_Synchronize_05 {
         System.out.println(Thread.currentThread().getName()+" m1 start running.....");
         try {
             Thread.sleep(6000);
-            //假如不可重入，那么执行m2需要拿当前对象的锁，但是当前对象的锁已经被m1执行的时候拿掉了，
+            //假如不可重入，那么执行m2需要拿当前对象的锁，但是当前对象的锁已经被m1执行的时候拿掉到了，
             // 而m1还没执行完，所以锁没有被释放，这样就造成死循环。所以synchronized必须是可重入的锁
             m2();
         } catch (InterruptedException e) {
