@@ -19,11 +19,11 @@ public class D04_Synchronize_06 {
             }
             if (count == 5) { //synchronized 修饰的方法如果发生异常，锁就会进行释放。那么此时如果有另一个线程等待锁，
                 // 就会出现另一个线程直接使用当前线程的一些中间数据，造成系统错误。此时要想锁不释放，就要使用catch
-                //try {
+                try {
                 int i = 10 / 0;
-                // }catch (Exception e){
-                //   e.printStackTrace();
-                //}
+                 }catch (Exception e){
+                   e.printStackTrace();
+                }
             }
         }
     }
