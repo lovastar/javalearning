@@ -11,7 +11,7 @@ public class D04_Synchronize_03 {
     public synchronized  void m1(){
         System.out.println(Thread.currentThread().getName()+" m1 start running.....");
         try {
-            Thread.sleep(6000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
