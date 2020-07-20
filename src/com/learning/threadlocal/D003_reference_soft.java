@@ -29,6 +29,7 @@ public class D003_reference_soft {
         System.out.println("内存不足时"+softReference.get());//总内存（15）小于20（10+10）的情况下看软引用指向的对象是否被回收
 
 
+
     }
 }
 
