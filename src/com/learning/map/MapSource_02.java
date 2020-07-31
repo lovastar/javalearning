@@ -8,7 +8,7 @@ package com.learning.map;
  *100000000   & 41 , % 839
  *1000000000  & 369 , % 8575
  */
-public class MySorce_02 {
+public class MapSource_02 {
 
     public static void main(String[] args) {
 
