@@ -1,8 +1,10 @@
 package com.learning.annotation;
 
-@Table()
+@Table(name="xxxx")
 public class Student {
+    @NotNull("aaaaa")
     private String name ;
+    @NotNull("bbbb")
     private Integer id ;
 
     public String getName() {
