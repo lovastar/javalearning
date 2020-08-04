@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jol-core-0.9" level="project" />
+    <orderEntry type="library" name="antdb-5.0" level="project" />
   </component>
 </module>
