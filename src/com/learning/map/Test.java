@@ -2,11 +2,10 @@ package com.learning.map;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.atomic.LongAdder;
 
 public class Test {
     public static void main(String[] args) {
-        Map<String, Integer> map = new HashMap<>(3);
-        map.put("1",3);
-
+        LongAdder longAdder = new LongAdder();
     }
 }
